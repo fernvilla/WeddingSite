@@ -36,10 +36,10 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#main" class="animated bounceInRight"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#ceremony" class="animated bounceInRight"><i class="fa fa-bell"></i>Ceremony</a></li>
-            <li><a href="#reception" class="animated bounceInRight"><i class="fa fa-glass"></i>Reception</a></li>
-            <li><a href="#photos" class="animated bounceInRight"><i class="fa fa-camera"></i>Photos</a></li>
+            <li><%= link_to "<i class='fa fa-home'></i> Home".html_safe, root_path, :class => "animated bounceInRight" %></li>
+            <li><%= link_to "<i class='fa fa-bell'></i> Ceremony".html_safe, ceremony_path, :class => "animated bounceInRight" %></li>
+            <li><%= link_to "<i class='fa fa-glass'></i> Reception".html_safe, reception_path, :class => "animated bounceInRight" %></li>
+            <li><%= link_to "<i class='fa fa-camera'></i> Photos".html_safe, photos_path, :class => "animated bounceInRight" %></li>
           </ul>
         </div>
       </div>
