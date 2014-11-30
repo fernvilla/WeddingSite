@@ -1,3 +1,98 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.jumbotron {
+  margin: 0;
+}
+.jumbotron.home {
+  background-image: url('home/walking-sunset.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 25%;
+  background-size: cover;
+
+  .collage {
+    padding: 0;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .story-link {
+    position: absolute;
+    top: 75%;
+    right: -1%;
+    line-height: 2em;
+
+    .read-it {
+      color: #fff;
+      text-shadow: 2px 2px 1px #000;
+
+      a {
+        color: #fff;
+        font-size: 3em;
+        text-shadow: 2px 2px 1px #000;
+
+        &:hover {
+          color: #f7d24c;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+      .fa {
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+.jumbotron.story {
+  background-image: url('home/flowers-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  color: #134419;
+  padding: 0;
+
+  .story-overlay {
+    background-color: rgba(255, 255, 255, .6);
+    padding-top: 20px;
+
+    p {
+      font-size: 1.05em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron.home {
+    background-position: right;
+    padding: 0;
+
+    .collage {
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .jumbotron.story {
+    background-position: right;
+
+    .story-overlay {
+      padding-top: 5px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
