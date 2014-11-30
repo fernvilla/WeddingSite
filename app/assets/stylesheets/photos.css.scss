@@ -3,15 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron.galleries {
-  height: 100%;
-  width: 100%;
+  padding-top: 60px;
   background-color: #333333;
-  background-size: cover;
   color: #fff;
 
   .title {
     color: #fff;
-    margin: 40px 0 30px 0;
+    margin: 25px;
   }
 
   h1 {
@@ -27,9 +25,8 @@
 .photos {
   padding-top: 45px;
   background-color: #333333;
+  background-attachment: fixed;
   color: #fff;
-  height: 100%;
-  width: 100%;
 
   .title {
     color: #fff;
