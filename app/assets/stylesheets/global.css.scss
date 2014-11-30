@@ -48,6 +48,11 @@ body {
   }
 }
 
+// Lightbox
+.lightbox {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .navbar {
     padding: 0;
