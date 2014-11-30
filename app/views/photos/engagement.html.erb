@@ -1,0 +1,9 @@
+<div class="container-fluid photos">
+  <h1 class="text-center title">Engagement Photos</h1>
+
+  <% @images.each do |image| %>
+    <div class="col-sm-3">
+      <%= link_to( image_tag("photos/engagement/#{image.split('/').last}", class: "img-responsive thumbnail"), image_path("photos/engagement/#{image.split('/').last}"), data: {lightbox: :engagement} ) %>
+    </div>
+  <% end %>
+</div>
