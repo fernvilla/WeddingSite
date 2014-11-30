@@ -43,4 +43,7 @@ group :development, :test do
 end
 
 # Deployment
-gem 'rails_12factor', group: :production
+group :production do
+    gem 'rails_12factor'
+    gem 'unicorn'
+end
