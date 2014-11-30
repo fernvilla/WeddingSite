@@ -1,22 +1,9 @@
 <div class="container-fluid photos">
   <h1 class="text-center title">Engagement Photos</h1>
 
-  <div class="col-sm-3">
-    <%= link_to( image_tag("photos/engagement/engagement1.jpg", class: "img-responsive thumbnail"), image_path( "photos/engagement/engagement1.jpg"), data: {lightbox: :engagement} ) %>
-  </div>
-  <div class="col-sm-3">
-    <%= link_to( image_tag("photos/engagement/engagement2.jpg", class: "img-responsive thumbnail"), image_path( "photos/engagement/engagement2.jpg"), data: {lightbox: :engagement} ) %>
-  </div>
-  <div class="col-sm-3">
-    <%= link_to( image_tag("photos/engagement/engagement3.jpg", class: "img-responsive thumbnail"), image_path( "photos/engagement/engagement3.jpg"), data: {lightbox: :engagement} ) %>
-  </div>
-  <div class="col-sm-3">
-    <%= link_to( image_tag("photos/engagement/engagement4.jpg", class: "img-responsive thumbnail"), image_path( "photos/engagement/engagement4.jpg"), data: {lightbox: :engagement} ) %>
-  </div>
-  <div class="col-sm-3">
-    <%= link_to( image_tag("photos/engagement/engagement5.jpg", class: "img-responsive thumbnail"), image_path( "photos/engagement/engagement5.jpg"), data: {lightbox: :engagement} ) %>
-  </div>
-  <div class="col-sm-3">
-    <%= link_to( image_tag("photos/engagement/engagement6.jpg", class: "img-responsive thumbnail"), image_path( "photos/engagement/engagement6.jpg"), data: {lightbox: :engagement} ) %>
-  </div>
+  <% @images.each do |image| %>
+    <div class="col-sm-3">
+      <%= link_to( image_tag("photos/engagement/#{image.split('/').last}", class: "img-responsive thumbnail"), image_path("photos/engagement/#{image.split('/').last}"), data: {lightbox: :engagement} ) %>
+    </div>
+  <% end %>
 </div>
