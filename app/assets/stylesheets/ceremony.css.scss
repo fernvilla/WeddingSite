@@ -1,3 +1,11 @@
 // Place all the styles related to the Ceremony controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron.ceremony {
+  background-image: image-url('ceremony/church.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 40%;
+}
