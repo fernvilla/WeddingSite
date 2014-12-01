@@ -27,25 +27,27 @@
     top: 75%;
     right: 0;
     line-height: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
 
-    .read-it {
+    &:hover {
+      color: #f7d24c;
+      cursor: pointer;
+    }
+
+    a {
       color: #fff;
+      font-size: 4em;
       text-shadow: 2px 2px 1px #000;
 
-      a {
-        color: #fff;
-        font-size: 3em;
-        text-shadow: 2px 2px 1px #000;
+      &:hover {
+        color: #f7d24c;
+        text-decoration: none;
+      }
+    }
 
-        &:hover {
-          color: #f7d24c;
-          cursor: pointer;
-          text-decoration: none;
-        }
-      }
-      .fa {
-        font-size: 1.1em;
-      }
+    .fa {
+      font-size: 1.5em;
     }
   }
 }
