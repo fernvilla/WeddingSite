@@ -3,10 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron.ceremony {
+  padding-top: 75px;
   background-image: image-url('ceremony/church.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100%;
   width: 100%;
+
+  .ceremony-info {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 2px 2px 3px #000;
+    border-radius: 5px;
+    padding: 15px 40px;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 5px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    hr {
+      margin: 15px 0;
+      border-top: 1px solid #f7d24c;
+    }
+  }
 }
