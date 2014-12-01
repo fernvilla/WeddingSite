@@ -36,6 +36,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.6)
     animate-rails (1.0.7)
       rails
     arel (6.0.0)
@@ -62,6 +63,8 @@ GEM
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    fastimage (1.6.4)
+      addressable (~> 2.3, >= 2.3.5)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     globalid (0.3.0)
@@ -172,6 +175,7 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.3.1)
   byebug
+  fastimage
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
