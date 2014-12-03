@@ -17,6 +17,9 @@ gem 'font-awesome-rails'
 gem 'animate-rails'
 gem 'fastimage'
 
+# Images
+gem "lazyload-rails"
+
 # Maps
 gem 'gmaps4rails'
 
