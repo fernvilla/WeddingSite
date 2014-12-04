@@ -1,0 +1,43 @@
+<div class="container guest-book text-center">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Create a Message:</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <%= form_for :message, url: messages_path do |f| %>
+        <% if @message.errors.any? %>
+          <div id="error_explanation">
+            <h4>
+              <%= pluralize(@message.errors.count, "error") %> prohibited
+              this message from being saved:
+            </h4>
+              <% @message.errors.full_messages.each do |msg| %>
+                <p><%= msg %></p>
+              <% end %>
+          </div>
+        <% end %>
+
+        <p>
+          <%= f.label :message %><br>
+          <%= f.text_area :message %>
+        </p>
+
+        <p>
+          <%= f.label "Your Name" %><br>
+          <%= f.text_field :name %>
+        </p>
+
+        <p>
+          <%= f.submit %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <%= link_to "Go back", messages_path %>
+  </div>
+</div>

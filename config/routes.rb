@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'reception' => 'reception#index'
   get 'ceremony' => 'ceremony#index'
 
+  resources :messages, :path => "guestbook"
+
 end
