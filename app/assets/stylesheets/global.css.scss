@@ -24,6 +24,12 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
+// Auth pages
+.auth {
+  padding-top: 60px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 // Navbar
 .navbar {
   @include linear-gradient(#4c4c4c, #000);

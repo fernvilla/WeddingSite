@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   resources :messages, :path => "guestbook"
 
+  devise_for :admins
+  devise_scope :admin do
+    get "/admin" => "devise/sessions#new"
+  end
 end

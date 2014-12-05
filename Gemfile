@@ -23,6 +23,9 @@ gem "lazyload-rails"
 # Maps
 gem 'gmaps4rails'
 
+# Auth
+gem 'devise'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -51,6 +54,6 @@ end
 
 # Deployment
 group :production do
-    gem 'rails_12factor'
-    gem 'unicorn'
+  gem 'rails_12factor'
+  gem 'unicorn'
 end
