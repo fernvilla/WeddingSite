@@ -1,13 +1,15 @@
+<% provide(:title, "Guest Book | New Message") %>
+
 <div class="container guest-book text-center">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Create a Message:</h1>
+      <h1>Create Your Message</h1>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-12">
-      <%= form_for :message, url: messages_path do |f| %>
+    <div class="col-sm-4 col-sm-offset-4">
+      <%= form_for @message, :html => {:class => "form-horizontal"} do |f| %>
         <% if @message.errors.any? %>
           <div id="error_explanation">
             <h4>
@@ -20,19 +22,19 @@
           </div>
         <% end %>
 
-        <p>
-          <%= f.label :message %><br>
-          <%= f.text_area :message %>
-        </p>
+        <div class="form-group">
+          <%= f.label :message%><br>
+          <%= f.text_area :message, :class => "form-control"  %>
+        </div>
 
-        <p>
+        <div class="form-group">
           <%= f.label "Your Name" %><br>
-          <%= f.text_field :name %>
-        </p>
+          <%= f.text_field :name, :class => "form-control"  %>
+        </div>
 
-        <p>
-          <%= f.submit %>
-        </p>
+        <div class="form-group">
+          <%= f.submit "Send Message", :class => "btn btn-default"%>
+        </div>
       <% end %>
     </div>
   </div>

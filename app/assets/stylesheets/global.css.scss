@@ -9,6 +9,10 @@ body {
   padding-top: 25px;
 }
 
+a {
+  color: #004080;
+}
+
 @mixin linear-gradient($fromColor, $toColor) {
   background-color: #000; /* Fallback Color */
   background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
