@@ -27,6 +27,14 @@ a {
 .btn-default {
   @include linear-gradient(#4c4c4c, #000);
   color: #f7d24c;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+#error_explanation {
+  color: red;
 }
 
 // Auth pages

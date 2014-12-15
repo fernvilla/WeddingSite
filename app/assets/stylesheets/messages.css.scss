@@ -11,15 +11,21 @@
     margin-bottom: 10px;
   }
 
+  #messages-container {
+    margin-top: 15px;
+  }
+
   .message {
     border: 1px solid #ccc;
     padding: 12px 20px;
-    margin: 15px auto;
+    margin: 10px auto;
     border-radius: 5px;
+    background-color: rgba(255, 215, 0, 0.02);
 
     .message-text {
       font-size: 1.05em;
     }
+
     .message-name {
       font-style: italic;
       font-size: .9em;

@@ -2,7 +2,7 @@
 // All this logic will automatically be available in application.js.
 
 // Isotope
-var $container = $('#container');
+var $container = $('#messages-container');
 
 $container.isotope({
   itemSelector: '.message-box',
