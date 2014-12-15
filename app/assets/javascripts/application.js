@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require lightbox/lightbox.min.js
+//= require isotope.min.js
 //= require jquery.lazyload.js
 //= require bootstrap-sprockets
 //= require turbolinks

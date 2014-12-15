@@ -12,9 +12,13 @@
   }
 
   .message {
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    margin: 15px auto;
+    border-radius: 5px;
+
     .message-text {
-      font-size: 1.1em;
-      color: #004080;
+      font-size: 1.05em;
     }
     .message-name {
       font-style: italic;

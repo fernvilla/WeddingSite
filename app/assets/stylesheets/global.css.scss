@@ -1,3 +1,14 @@
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: #000; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
 html,
 body {
   width: 100%;
@@ -13,15 +24,9 @@ a {
   color: #004080;
 }
 
-@mixin linear-gradient($fromColor, $toColor) {
-  background-color: #000; /* Fallback Color */
-  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
-  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
-  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
-  background-image:         linear-gradient(top, $fromColor, $toColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+.btn-default {
+  @include linear-gradient(#4c4c4c, #000);
+  color: #ffe24b;
 }
 
 // Auth pages

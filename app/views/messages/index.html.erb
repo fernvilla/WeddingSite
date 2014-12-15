@@ -1,6 +1,6 @@
 <% provide(:title, "Guest Book") %>
 
-<div class="container guest-book text-center">
+<div class="container-fluid guest-book text-center">
   <div class="row">
     <div class="col-sm-12">
       <h1>Guest Book</h1>
@@ -10,24 +10,22 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-12 col-md-6 col-md-offset-3">
-      <hr>
-      <% @messages.each do |message| %>
+    <div class="col-sm-12">
+      <%= link_to "Sign Our Guest Book", new_message_path %>
+    </div>
+  </div>
+
+  <div class="row" id="container">
+    <% @messages.each do |message| %>
+      <div class="col-xs-6 col-sm-3 message-box">
         <div class="message">
-          <p class="text-left message-text"><%= message.message %></p>
-          <p class="text-right message-name">-<%= message.name %> (<%= message.created_at.strftime('%b %e, %l:%M %p') %>)</p>
+          <p class="message-text">"<%= message.message %>"</p>
+          <p class="message-name">-<%= message.name %> (<%= message.created_at.strftime('%b %e, %l:%M %p') %>)</p>
           <% if admin_signed_in? %>
             <p><%= link_to "Delete", message_path(message), method: :delete, data: { confirm: "Are you sure?" } %></p>
           <% end %>
         </div>
-        <hr>
-      <% end %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12">
-      <%= link_to "Sign Our Guest Book", new_message_path, :class => "btn btn-default" %>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>
