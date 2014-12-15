@@ -3,7 +3,7 @@
 <div class="container guest-book text-center">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Create Your Message</h1>
+      <h1>Sign the Guest Book</h1>
     </div>
   </div>
 
@@ -23,17 +23,15 @@
         <% end %>
 
         <div class="form-group">
-          <%= f.label :message%><br>
-          <%= f.text_area :message, class: "form-control"  %>
+          <%= f.text_area :message, class: "form-control", rows: 5, placeholder: "Enter your message..."  %>
         </div>
 
         <div class="form-group">
-          <%= f.label "Your Name" %><br>
-          <%= f.text_field :name, class: "form-control"  %>
+          <%= f.text_field :name, class: "form-control", placeholder: "Your name"  %>
         </div>
 
         <div class="form-group">
-          <%= f.submit "Send Message", class: "btn btn-default"%>
+          <%= f.submit "Post Message", class: "btn btn-default"%>
         </div>
       <% end %>
     </div>
