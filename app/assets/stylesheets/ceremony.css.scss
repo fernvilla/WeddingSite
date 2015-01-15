@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron.ceremony {
-  padding-top: 75px;
   background-image: image-url('ceremony/church.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100%;
   width: 100%;
+  padding-top: 8%;
 
   .ceremony-info {
     color: #fff;
@@ -38,4 +38,18 @@
       border-top: 1px solid #f7d24c;
     }
   }
+}
+
+@media (max-width: 767px) {
+  .jumbotron.ceremony {
+    padding-top: 10%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
 }

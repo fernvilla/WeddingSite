@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron.reception {
-  padding-top: 75px;
   background-image: image-url('reception/nixon.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100%;
   width: 100%;
+  padding-top: 8%;
 
   .reception-info {
     color: #fff;
@@ -40,3 +40,17 @@
   }
 }
 
+@media (max-width: 767px) {
+  .jumbotron.reception {
+    padding-top: 10%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}

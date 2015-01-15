@@ -11,7 +11,7 @@ gem 'pg'
 
 # Styling
 gem 'bootstrap-sass', '~> 3.3.1'
-gem 'autoprefixer-rails'
+gem 'autoprefixer-rails', '4.0.1'
 gem 'sass-rails', '~> 4.0'
 gem 'font-awesome-rails'
 gem 'animate-rails'

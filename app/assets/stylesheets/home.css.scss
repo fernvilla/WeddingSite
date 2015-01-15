@@ -13,6 +13,7 @@
   background-size: cover;
   height: 100%;
   width: 100%;
+  padding-top: 6%;
 
   .collage {
     padding: 0;
@@ -71,7 +72,7 @@
 @media (max-width: 767px) {
   .jumbotron.home {
     background-position: right;
-    padding: 0;
+    padding: 10% 0;
   }
 
   .jumbotron.story {
