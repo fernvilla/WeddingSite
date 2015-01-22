@@ -26,6 +26,9 @@ gem 'gmaps4rails'
 # Auth
 gem 'devise'
 
+#Gzip
+gem 'rack-zippy'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 

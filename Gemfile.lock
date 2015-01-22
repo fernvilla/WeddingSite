@@ -106,6 +106,7 @@ GEM
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rack-zippy (2.0.2)
     rails (4.2.0.rc1)
       actionmailer (= 4.2.0.rc1)
       actionpack (= 4.2.0.rc1)
@@ -199,6 +200,7 @@ DEPENDENCIES
   jquery-rails
   lazyload-rails
   pg
+  rack-zippy
   rails (= 4.2.0.rc1)
   rails_12factor
   sass-rails (~> 4.0)
