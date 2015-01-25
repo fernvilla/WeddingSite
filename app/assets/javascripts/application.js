@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require gmaps/google
 //= require lightbox/lightbox.min.js
 //= require isotope.min.js
 //= require jquery.lazyload.js

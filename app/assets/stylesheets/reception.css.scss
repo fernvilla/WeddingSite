@@ -40,6 +40,19 @@
   }
 }
 
+.reception-map {
+  margin: 0 -15px;
+
+  .jumbotron {
+    padding: 0;
+  }
+
+  #reception-map {
+    width: 100%;
+    min-height: 750px;
+  }
+}
+
 @media (max-width: 767px) {
   .jumbotron.reception {
     padding-top: 10%;
