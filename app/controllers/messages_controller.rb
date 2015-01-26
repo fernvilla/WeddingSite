@@ -11,10 +11,10 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
-      @users = ['fvilla18@gmail.com', 'basebl1881@yahoo.com']
+      @users = ['fvilla18@gmail.com', 'agmartin7@yahoo.com']
 
       @users.each do |user|
-        UserNotifier.send_notification(user).deliver
+        UserNotifier.send_notification(user).deliver_now
       end
 
       redirect_to messages_path
