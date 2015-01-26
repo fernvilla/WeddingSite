@@ -11,18 +11,12 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
-      @users = [
-        {
-          name: 'Fernando',
-          email: 'fvilla18@gmail.com'
-        },
-        {
-          name: 'Ariana',
-          email: 'agmartin7@yahoo.com'
-        }
-      ]
+      @users = ['fvilla18@gmail.com', 'agmartin7@yahoo.com']
+      
+      @users.each do |user|
+        UserNotifier.send_notification(user).deliver
+      end
 
-      UserNotifier.send_notification(@users).deliver
       redirect_to messages_path
     else
       render 'new'
