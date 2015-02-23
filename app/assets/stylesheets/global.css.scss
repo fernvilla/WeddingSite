@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Dancing Script', cursive;
   padding-top: 25px;
   background: #333;
 }
@@ -59,8 +59,8 @@ a {
   padding: 0 30px;
 
   .navbar-brand {
-    font-size: 1.7em;
-    line-height: 1.1em;
+    font-size: 1.6em;
+    line-height: .9em;
   }
 
   .navbar-nav>li>a {
@@ -82,8 +82,12 @@ a {
   .doves {
     height: 25px;
     float: left;
-    margin-top: 12px;
+    margin-top: 10px;
   }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+ }
 }
 
 // Lightbox
