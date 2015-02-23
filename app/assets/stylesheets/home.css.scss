@@ -72,7 +72,23 @@
 @media (max-width: 767px) {
   .jumbotron.home {
     background-position: right;
-    padding: 10% 0;
+    padding: 6% 0;
+
+    .story-link {
+      position: relative;
+      margin-top: 20px;
+      line-height: 1em;
+      color: #fff;
+      text-shadow: 2px 2px 1px #000;
+
+      a {
+        font-size: 2.5em;
+      }
+
+      .fa {
+        font-size: 1em;
+      }
+    }
   }
 
   .jumbotron.story {
