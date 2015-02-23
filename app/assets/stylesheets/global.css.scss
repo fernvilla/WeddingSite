@@ -18,7 +18,7 @@ body {
 body {
   font-family: 'Pinyon Script', cursive;
   padding-top: 25px;
-  background: #000;
+  background: #333;
 }
 
 a {
@@ -27,6 +27,10 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+.center-block {
+  float: none;
 }
 
 .btn-default {
@@ -136,5 +140,4 @@ a {
       margin-right: 5px;
     }
   }
-
 }
