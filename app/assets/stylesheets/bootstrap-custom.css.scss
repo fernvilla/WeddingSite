@@ -4,3 +4,8 @@ $navbar-border-radius: 0;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background: #f7d24c;
+}
