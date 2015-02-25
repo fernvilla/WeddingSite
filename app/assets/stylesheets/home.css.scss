@@ -54,17 +54,26 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  font-family: 'Indie Flower', cursive;
   font-weight: bold;
   color: #134419;
   padding: 0;
 
+  h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin: 10px;
+  }
+
   .story-overlay {
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(246, 246, 242, .6);
     padding-top: 20px;
 
     p {
-      font-size: 1.05em;
+      font-size: 1.3em;
+      letter-spacing: 1px;
     }
   }
 }
