@@ -69,6 +69,15 @@
   }
 }
 
+.registry {
+  background-color: #fff;
+  padding: 40px 15px 60px 15px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 767px) {
   .jumbotron.home {
     background-position: right;

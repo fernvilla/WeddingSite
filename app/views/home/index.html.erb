@@ -4,7 +4,7 @@
       <div class="col-md-6 collage">
         <%= link_to image_tag('home/collage.png', :class=> "animated fadeInLeft img-responsive"), photos_path %>
       </div>
-      <div class="col-sm-12 col-md-6 story-link text-center animated zoomInRight">
+      <div class="col-xs-12 col-sm-4 col-md-6 story-link text-center animated zoomInRight">
         <%= link_to "Our Story", {anchor: "our-story"}%> <br> <i class="fa fa-chevron-down"></i>
       </div>
     </div>
@@ -39,5 +39,32 @@
         <p>I got her…the end ;)</p>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="container-fluid registry">
+  <div class="row text-center" id="registry">
+    <div class="col-xs-12">
+      <h1>Our Registries</h1>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-centered">
+      <%= link_to image_tag('home/honeyfund.png', class: 'img-responsive'), "http://www.honeyfund.com/wedding/ariandfern", target: "blank"  %> 
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-centered">
+      <%= link_to image_tag('home/target.png', class: 'img-responsive'), "http://www.target.com/gift-registry/giftgiver?registryId=xKc0I-85eueoWl1v_8Xl4g&registryType=WEDDING", target: "blank"  %> 
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-centered">
+      <%= link_to image_tag('home/bbb.png', class: 'img-responsive'), "http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542022858", target: "blank" %> 
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row hotel-info">
+    <h2>Hotel Information</h2>
+    
   </div>
 </div>

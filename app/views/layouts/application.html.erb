@@ -34,14 +34,15 @@
             <span class="icon-bar"></span>
           </button>
           <%= link_to "Ariana and Fernando Wedding", root_path, :class => "navbar-brand" %>
-          <%= image_tag('doves.png', class: "hidden-xs doves") %>
-          <%= image_tag('heart.png', class: "hidden-xs hidden-sm heart")%>
+          <%= image_tag('doves.png', class: "hidden-xs hidden-sm doves") %>
+          <%= image_tag('heart.png', class: "hidden-xs hidden-sm hidden-md heart")%>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right text-center">
             <li><%= link_to "<i class='fa fa-bell'></i> Ceremony".html_safe, ceremony_path%></li>
             <li><%= link_to "<i class='fa fa-glass'></i> Reception".html_safe, reception_path%></li>
+            <li><%= link_to "<i class='fa fa-gift'></i> Registry".html_safe, root_path + '#registry'%></li>
             <li><%= link_to "<i class='fa fa-camera'></i> Photos".html_safe, photos_path%></li>
             <li><%= link_to "<i class='fa fa-pencil'></i> Guest Book".html_safe, messages_path%></li>
           </ul>

@@ -46,6 +46,12 @@ a {
   color: red;
 }
 
+.col-centered {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
 // Auth pages
 .auth {
   padding-top: 60px;
@@ -60,10 +66,15 @@ a {
 
   .navbar-brand {
     font-size: 1.6em;
+
+    &.small {
+      font-size: 1em;
+    }
   }
 
   .navbar-nav>li>a {
     font-size: 1.25em;
+    padding-left: 5px;
   }
 
   .fa {
