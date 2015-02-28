@@ -92,6 +92,33 @@
   }
 }
 
+.hotel-info {
+  background-color: #F8F8F6;
+  padding: 40px 15px 60px 15px;
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  .info-container {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  }
+}
+
+.hotel-map {
+  margin: 0;
+  padding: 0;
+
+  .jumbotron {
+    padding: 0;
+  }
+
+  #hotel-map {
+    width: 100%;
+    min-height: 750px;
+  }
+}
+
 @media (max-width: 767px) {
   .jumbotron.home {
     background-position: right;
