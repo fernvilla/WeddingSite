@@ -53,7 +53,7 @@ $(document).ready(function() {
       }
     );
   }
-  else {
+  else if (window.location.pathname == '/') {
     handler = Gmaps.build('Google');
     handler.buildMap({
         provider: {
@@ -71,4 +71,4 @@ $(document).ready(function() {
       }
     );
   }
-})
+});
