@@ -22,7 +22,6 @@
   }
 }
 
-
 .photos {
   padding-top: 45px;
   background-color: #333333;
@@ -48,8 +47,8 @@
 }
 
 @media (max-width: 767px) {
-  .jumbotron.galleries {
-    padding-top: 10%;
+  .photos {
+    padding-top: 20px;
   }
 
 }
